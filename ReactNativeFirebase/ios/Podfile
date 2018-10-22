@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'ReactNativeFirebase' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ReactNativeFirebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+
+  # target 'ReactNativeFirebase-tvOSTests' do
+  #   inherit! :search_paths
+  #   # Pods for testing
+  # end
+
+  target 'ReactNativeFirebaseTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+# target 'ReactNativeFirebase-tvOS' do
+#   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#   # use_frameworks!
+
+#   # Pods for ReactNativeFirebase-tvOS
+
+#   target 'ReactNativeFirebase-tvOSTests' do
+#     inherit! :search_paths
+#     # Pods for testing
+#   end
+
+# end
