@@ -7,7 +7,7 @@ target 'ReactNativeFirebase' do
 
   # Pods for ReactNativeFirebase
   pod 'Firebase/Core'
-  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   # target 'ReactNativeFirebase-tvOSTests' do
   #   inherit! :search_paths

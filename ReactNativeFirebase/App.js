@@ -12,16 +12,15 @@ import { Platform, StyleSheet, Text, View } from "react-native";
 import firebase from "react-native-firebase";
 
 console.log(111111);
-firebase
-  .auth()
-  .signInAnonymously()
-  .then(credential => {
-    console.log(2222222);
-    if (credential) {
-      console.log(333333333);
-      console.log("default app user ->", credential.user.toJSON());
-    }
-  });
+// firebase
+//   .firestore()
+//   .collection("payments")
+//   .add({
+//     userId: "w0Wx7AaAVGlQOBS3RfYM",
+//     value: 50000,
+//     name: "住宅",
+//     paymentAt: new Date("2018-08-15")
+//   });
 console.log(4444444);
 
 const instructions = Platform.select({
