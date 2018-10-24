@@ -1,0 +1,3 @@
+[submodule "react-native-firebase-starter-example3"]
+	path = react-native-firebase-starter-example3
+	url = https://github.com/invertase/react-native-firebase-starter.git
