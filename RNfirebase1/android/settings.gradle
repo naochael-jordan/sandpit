@@ -1,0 +1,3 @@
+rootProject.name = 'RNfirebase1'
+
+include ':app'
