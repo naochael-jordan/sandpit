@@ -9,5 +9,15 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :me, Types::UserType, null: false,
+      resolve: ->(obj, args, ctx) { User.first }
+
+    # こんな書き方も出来る
+    # def me
+    #   User.first
+    # end
+
+
   end
 end
