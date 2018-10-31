@@ -18,6 +18,6 @@ module Types
     #   User.first
     # end
 
-
+    field :projects, [Types::ProjectType], null: false, resolve: ->(obj, args, ctx) { Project.all }
   end
 end
