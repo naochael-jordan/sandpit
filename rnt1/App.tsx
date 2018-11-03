@@ -1,49 +1,62 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+// components/Hello.tsx
+import React from "react";
+import { Button, StyleSheet, Text, View } from "react-native";
 
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+// export interface Props {
+//   name: string;
+//   enthusiasmLevel?: number;
+//   onIncrement?: () => void;
+//   onDecrement?: () => void;
+// }
 
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-});
+// interface State {
+//   enthusiasmLevel: number;
+// }
 
-type Props = {};
-export default class App extends Component<Props> {
+export class Hello extends React.Component {
+  // constructor() {
+  //   super();
+
+  //   // if ((props.enthusiasmLevel || 0) <= 0) {
+  //   //   throw new Error("You could be a little more enthusiastic. :D");
+  //   // }
+
+  //   // this.state = {
+  //   //   enthusiasmLevel: props.enthusiasmLevel || 1
+  //   // };
+  // }
+
+  // onIncrement = () =>
+  //   this.setState({ enthusiasmLevel: this.state.enthusiasmLevel + 1 });
+  // onDecrement = () =>
+  //   this.setState({ enthusiasmLevel: this.state.enthusiasmLevel - 1 });
+  // getExclamationMarks = (numChars: number) => Array(numChars + 1).join("!");
+
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
+    return <View style={styles.root} />;
   }
 }
 
+// styles
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
+  root: {
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    alignSelf: "center"
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
+  buttons: {
+    flexDirection: "row",
+    minHeight: 70,
+    alignItems: "stretch",
+    alignSelf: "center",
+    borderWidth: 5
   },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
+  button: {
+    flex: 1,
+    paddingVertical: 0
+  },
+  greeting: {
+    color: "#999",
+    fontWeight: "bold"
   }
 });
