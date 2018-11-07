@@ -1,0 +1,52 @@
+ce5f0b24d0a3e7aed41d0269612365fe
+
+
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = require('React');
+var View = require('View');
+
+var requireNativeComponent = require('requireNativeComponent');
+
+var RCTScrollView = requireNativeComponent('RCTScrollView');
+
+var ScrollViewComponent = jest.genMockFromModule('ScrollView');
+
+var ScrollViewMock = function (_ScrollViewComponent) {
+  _inherits(ScrollViewMock, _ScrollViewComponent);
+
+  function ScrollViewMock() {
+    _classCallCheck(this, ScrollViewMock);
+
+    return _possibleConstructorReturn(this, (ScrollViewMock.__proto__ || Object.getPrototypeOf(ScrollViewMock)).apply(this, arguments));
+  }
+
+  _createClass(ScrollViewMock, [{
+    key: 'render',
+    value: function render() {
+      return React.createElement(
+        RCTScrollView,
+        this.props,
+        this.props.refreshControl,
+        React.createElement(
+          View,
+          null,
+          this.props.children
+        )
+      );
+    }
+  }]);
+
+  return ScrollViewMock;
+}(ScrollViewComponent);
+
+module.exports = ScrollViewMock;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNjcm9sbFZpZXdNb2NrLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwicmVxdWlyZSIsIlZpZXciLCJyZXF1aXJlTmF0aXZlQ29tcG9uZW50IiwiUkNUU2Nyb2xsVmlldyIsIlNjcm9sbFZpZXdDb21wb25lbnQiLCJqZXN0IiwiZ2VuTW9ja0Zyb21Nb2R1bGUiLCJTY3JvbGxWaWV3TW9jayIsInByb3BzIiwicmVmcmVzaENvbnRyb2wiLCJjaGlsZHJlbiIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI7O0FBWUE7Ozs7Ozs7Ozs7QUFJQSxJQUFNQSxRQUFRQyxRQUFRLE9BQVIsQ0FBZDtBQUNBLElBQU1DLE9BQU9ELFFBQVEsTUFBUixDQUFiOztBQUVBLElBQU1FLHlCQUF5QkYsUUFBUSx3QkFBUixDQUEvQjs7QUFFQSxJQUFNRyxnQkFBZ0JELHVCQUF1QixlQUF2QixDQUF0Qjs7QUFFQSxJQUFNRSxzQkFBc0JDLEtBQUtDLGlCQUFMLENBQXVCLFlBQXZCLENBQTVCOztJQUVNQyxjOzs7Ozs7Ozs7Ozs2QkFDSztBQUNQLGFBQ0U7QUFBQyxxQkFBRDtBQUFtQixhQUFLQyxLQUF4QjtBQUNHLGFBQUtBLEtBQUwsQ0FBV0MsY0FEZDtBQUVFO0FBQUMsY0FBRDtBQUFBO0FBQU8sZUFBS0QsS0FBTCxDQUFXRTtBQUFsQjtBQUZGLE9BREY7QUFNRDs7OztFQVIwQk4sbUI7O0FBVzdCTyxPQUFPQyxPQUFQLEdBQWlCTCxjQUFqQiIsImZpbGUiOiJTY3JvbGxWaWV3TW9jay5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChjKSAyMDEzLXByZXNlbnQsIEZhY2Vib29rLCBJbmMuXG4gKlxuICogVGhpcyBzb3VyY2UgY29kZSBpcyBsaWNlbnNlZCB1bmRlciB0aGUgTUlUIGxpY2Vuc2UgZm91bmQgaW4gdGhlXG4gKiBMSUNFTlNFIGZpbGUgaW4gdGhlIHJvb3QgZGlyZWN0b3J5IG9mIHRoaXMgc291cmNlIHRyZWUuXG4gKlxuICogQGZvcm1hdFxuICogQGZsb3dcbiAqL1xuXG4vKiBlc2xpbnQtZW52IGplc3QgKi9cblxuJ3VzZSBzdHJpY3QnO1xuXG5kZWNsYXJlIHZhciBqZXN0OiBhbnk7XG5cbmNvbnN0IFJlYWN0ID0gcmVxdWlyZSgnUmVhY3QnKTtcbmNvbnN0IFZpZXcgPSByZXF1aXJlKCdWaWV3Jyk7XG5cbmNvbnN0IHJlcXVpcmVOYXRpdmVDb21wb25lbnQgPSByZXF1aXJlKCdyZXF1aXJlTmF0aXZlQ29tcG9uZW50Jyk7XG5cbmNvbnN0IFJDVFNjcm9sbFZpZXcgPSByZXF1aXJlTmF0aXZlQ29tcG9uZW50KCdSQ1RTY3JvbGxWaWV3Jyk7XG5cbmNvbnN0IFNjcm9sbFZpZXdDb21wb25lbnQgPSBqZXN0Lmdlbk1vY2tGcm9tTW9kdWxlKCdTY3JvbGxWaWV3Jyk7XG5cbmNsYXNzIFNjcm9sbFZpZXdNb2NrIGV4dGVuZHMgU2Nyb2xsVmlld0NvbXBvbmVudCB7XG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPFJDVFNjcm9sbFZpZXcgey4uLnRoaXMucHJvcHN9PlxuICAgICAgICB7dGhpcy5wcm9wcy5yZWZyZXNoQ29udHJvbH1cbiAgICAgICAgPFZpZXc+e3RoaXMucHJvcHMuY2hpbGRyZW59PC9WaWV3PlxuICAgICAgPC9SQ1RTY3JvbGxWaWV3PlxuICAgICk7XG4gIH1cbn1cblxubW9kdWxlLmV4cG9ydHMgPSBTY3JvbGxWaWV3TW9jaztcbiJdfQ==

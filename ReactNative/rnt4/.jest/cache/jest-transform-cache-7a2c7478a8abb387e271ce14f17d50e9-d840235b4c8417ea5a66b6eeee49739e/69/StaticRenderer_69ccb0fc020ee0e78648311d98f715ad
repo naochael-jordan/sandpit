@@ -1,0 +1,49 @@
+7cda56a77b913b2ed70bc1b8e14e2be6
+
+
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = require('React');
+
+var PropTypes = require('prop-types');
+
+var StaticRenderer = function (_React$Component) {
+  _inherits(StaticRenderer, _React$Component);
+
+  function StaticRenderer() {
+    _classCallCheck(this, StaticRenderer);
+
+    return _possibleConstructorReturn(this, (StaticRenderer.__proto__ || Object.getPrototypeOf(StaticRenderer)).apply(this, arguments));
+  }
+
+  _createClass(StaticRenderer, [{
+    key: 'shouldComponentUpdate',
+    value: function shouldComponentUpdate(nextProps) {
+      return nextProps.shouldUpdate;
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return this.props.render();
+    }
+  }]);
+
+  return StaticRenderer;
+}(React.Component);
+
+StaticRenderer.propTypes = {
+  shouldUpdate: PropTypes.bool.isRequired,
+  render: PropTypes.func.isRequired
+};
+
+
+module.exports = StaticRenderer;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlN0YXRpY1JlbmRlcmVyLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwicmVxdWlyZSIsIlByb3BUeXBlcyIsIlN0YXRpY1JlbmRlcmVyIiwibmV4dFByb3BzIiwic2hvdWxkVXBkYXRlIiwicHJvcHMiLCJyZW5kZXIiLCJDb21wb25lbnQiLCJwcm9wVHlwZXMiLCJib29sIiwiaXNSZXF1aXJlZCIsImZ1bmMiLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiOztBQVVBOzs7Ozs7Ozs7O0FBRUEsSUFBTUEsUUFBUUMsUUFBUSxPQUFSLENBQWQ7O0FBRUEsSUFBTUMsWUFBWUQsUUFBUSxZQUFSLENBQWxCOztJQUVNRSxjOzs7Ozs7Ozs7OzswQ0FTa0JDLFMsRUFBNkM7QUFDakUsYUFBT0EsVUFBVUMsWUFBakI7QUFDRDs7OzZCQUVvQjtBQUNuQixhQUFPLEtBQUtDLEtBQUwsQ0FBV0MsTUFBWCxFQUFQO0FBQ0Q7Ozs7RUFmMEJQLE1BQU1RLFM7O0FBQTdCTCxjLENBSUdNLFMsR0FBWTtBQUNqQkosZ0JBQWNILFVBQVVRLElBQVYsQ0FBZUMsVUFEWjtBQUVqQkosVUFBUUwsVUFBVVUsSUFBVixDQUFlRDtBQUZOLEM7OztBQWNyQkUsT0FBT0MsT0FBUCxHQUFpQlgsY0FBakIiLCJmaWxlIjoiU3RhdGljUmVuZGVyZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoYykgMjAxNS1wcmVzZW50LCBGYWNlYm9vaywgSW5jLlxuICpcbiAqIFRoaXMgc291cmNlIGNvZGUgaXMgbGljZW5zZWQgdW5kZXIgdGhlIE1JVCBsaWNlbnNlIGZvdW5kIGluIHRoZVxuICogTElDRU5TRSBmaWxlIGluIHRoZSByb290IGRpcmVjdG9yeSBvZiB0aGlzIHNvdXJjZSB0cmVlLlxuICpcbiAqIEBmb3JtYXRcbiAqIEBmbG93XG4gKi9cblxuJ3VzZSBzdHJpY3QnO1xuXG5jb25zdCBSZWFjdCA9IHJlcXVpcmUoJ1JlYWN0Jyk7XG5cbmNvbnN0IFByb3BUeXBlcyA9IHJlcXVpcmUoJ3Byb3AtdHlwZXMnKTtcblxuY2xhc3MgU3RhdGljUmVuZGVyZXIgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQ8e1xuICBzaG91bGRVcGRhdGU6IGJvb2xlYW4sXG4gIHJlbmRlcjogRnVuY3Rpb24sXG59PiB7XG4gIHN0YXRpYyBwcm9wVHlwZXMgPSB7XG4gICAgc2hvdWxkVXBkYXRlOiBQcm9wVHlwZXMuYm9vbC5pc1JlcXVpcmVkLFxuICAgIHJlbmRlcjogUHJvcFR5cGVzLmZ1bmMuaXNSZXF1aXJlZCxcbiAgfTtcblxuICBzaG91bGRDb21wb25lbnRVcGRhdGUobmV4dFByb3BzOiB7c2hvdWxkVXBkYXRlOiBib29sZWFufSk6IGJvb2xlYW4ge1xuICAgIHJldHVybiBuZXh0UHJvcHMuc2hvdWxkVXBkYXRlO1xuICB9XG5cbiAgcmVuZGVyKCk6IFJlYWN0Lk5vZGUge1xuICAgIHJldHVybiB0aGlzLnByb3BzLnJlbmRlcigpO1xuICB9XG59XG5cbm1vZHVsZS5leHBvcnRzID0gU3RhdGljUmVuZGVyZXI7XG4iXX0=
