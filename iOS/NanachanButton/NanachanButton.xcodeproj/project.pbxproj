@@ -7,64 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D59CA472191B02200F5F42A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59CA462191B02200F5F42A /* AppDelegate.swift */; };
-		1D59CA492191B02200F5F42A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59CA482191B02200F5F42A /* ViewController.swift */; };
-		1D59CA4C2191B02200F5F42A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D59CA4A2191B02200F5F42A /* Main.storyboard */; };
-		1D59CA4E2191B02300F5F42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D59CA4D2191B02300F5F42A /* Assets.xcassets */; };
-		1D59CA512191B02300F5F42A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D59CA4F2191B02300F5F42A /* LaunchScreen.storyboard */; };
-		1D59CA5C2191B02400F5F42A /* NanachanButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59CA5B2191B02400F5F42A /* NanachanButtonTests.swift */; };
-		1D59CA672191B02400F5F42A /* NanachanButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59CA662191B02400F5F42A /* NanachanButtonUITests.swift */; };
+		1D9E7DCD21943AB7000DB4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E7DCC21943AB7000DB4BE /* AppDelegate.swift */; };
+		1D9E7DCF21943AB7000DB4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E7DCE21943AB7000DB4BE /* ViewController.swift */; };
+		1D9E7DD221943AB7000DB4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9E7DD021943AB7000DB4BE /* Main.storyboard */; };
+		1D9E7DD421943AB7000DB4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9E7DD321943AB7000DB4BE /* Assets.xcassets */; };
+		1D9E7DD721943AB7000DB4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9E7DD521943AB7000DB4BE /* LaunchScreen.storyboard */; };
+		1D9E7DE221943AB7000DB4BE /* NanachanButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E7DE121943AB7000DB4BE /* NanachanButtonTests.swift */; };
+		1D9E7DED21943AB7000DB4BE /* NanachanButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E7DEC21943AB7000DB4BE /* NanachanButtonUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D59CA582191B02400F5F42A /* PBXContainerItemProxy */ = {
+		1D9E7DDE21943AB7000DB4BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1D59CA3B2191B02200F5F42A /* Project object */;
+			containerPortal = 1D9E7DC121943AB7000DB4BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D59CA422191B02200F5F42A;
+			remoteGlobalIDString = 1D9E7DC821943AB7000DB4BE;
 			remoteInfo = NanachanButton;
 		};
-		1D59CA632191B02400F5F42A /* PBXContainerItemProxy */ = {
+		1D9E7DE921943AB7000DB4BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1D59CA3B2191B02200F5F42A /* Project object */;
+			containerPortal = 1D9E7DC121943AB7000DB4BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D59CA422191B02200F5F42A;
+			remoteGlobalIDString = 1D9E7DC821943AB7000DB4BE;
 			remoteInfo = NanachanButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D59CA432191B02200F5F42A /* NanachanButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanachanButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D59CA462191B02200F5F42A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D59CA482191B02200F5F42A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D59CA4B2191B02200F5F42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1D59CA4D2191B02300F5F42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D59CA502191B02300F5F42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1D59CA522191B02300F5F42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D59CA572191B02400F5F42A /* NanachanButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanachanButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D59CA5B2191B02400F5F42A /* NanachanButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanachanButtonTests.swift; sourceTree = "<group>"; };
-		1D59CA5D2191B02400F5F42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D59CA622191B02400F5F42A /* NanachanButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanachanButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D59CA662191B02400F5F42A /* NanachanButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanachanButtonUITests.swift; sourceTree = "<group>"; };
-		1D59CA682191B02400F5F42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9E7DC921943AB7000DB4BE /* NanachanButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanachanButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9E7DCC21943AB7000DB4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D9E7DCE21943AB7000DB4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D9E7DD121943AB7000DB4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D9E7DD321943AB7000DB4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D9E7DD621943AB7000DB4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D9E7DD821943AB7000DB4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9E7DDD21943AB7000DB4BE /* NanachanButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanachanButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9E7DE121943AB7000DB4BE /* NanachanButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanachanButtonTests.swift; sourceTree = "<group>"; };
+		1D9E7DE321943AB7000DB4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9E7DE821943AB7000DB4BE /* NanachanButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanachanButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9E7DEC21943AB7000DB4BE /* NanachanButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanachanButtonUITests.swift; sourceTree = "<group>"; };
+		1D9E7DEE21943AB8000DB4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D59CA402191B02200F5F42A /* Frameworks */ = {
+		1D9E7DC621943AB7000DB4BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D59CA542191B02400F5F42A /* Frameworks */ = {
+		1D9E7DDA21943AB7000DB4BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D59CA5F2191B02400F5F42A /* Frameworks */ = {
+		1D9E7DE521943AB7000DB4BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +74,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D59CA3A2191B02200F5F42A = {
+		1D9E7DC021943AB7000DB4BE = {
 			isa = PBXGroup;
 			children = (
-				1D59CA452191B02200F5F42A /* NanachanButton */,
-				1D59CA5A2191B02400F5F42A /* NanachanButtonTests */,
-				1D59CA652191B02400F5F42A /* NanachanButtonUITests */,
-				1D59CA442191B02200F5F42A /* Products */,
+				1D9E7DCB21943AB7000DB4BE /* NanachanButton */,
+				1D9E7DE021943AB7000DB4BE /* NanachanButtonTests */,
+				1D9E7DEB21943AB7000DB4BE /* NanachanButtonUITests */,
+				1D9E7DCA21943AB7000DB4BE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1D59CA442191B02200F5F42A /* Products */ = {
+		1D9E7DCA21943AB7000DB4BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D59CA432191B02200F5F42A /* NanachanButton.app */,
-				1D59CA572191B02400F5F42A /* NanachanButtonTests.xctest */,
-				1D59CA622191B02400F5F42A /* NanachanButtonUITests.xctest */,
+				1D9E7DC921943AB7000DB4BE /* NanachanButton.app */,
+				1D9E7DDD21943AB7000DB4BE /* NanachanButtonTests.xctest */,
+				1D9E7DE821943AB7000DB4BE /* NanachanButtonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1D59CA452191B02200F5F42A /* NanachanButton */ = {
+		1D9E7DCB21943AB7000DB4BE /* NanachanButton */ = {
 			isa = PBXGroup;
 			children = (
-				1D59CA462191B02200F5F42A /* AppDelegate.swift */,
-				1D59CA482191B02200F5F42A /* ViewController.swift */,
-				1D59CA4A2191B02200F5F42A /* Main.storyboard */,
-				1D59CA4D2191B02300F5F42A /* Assets.xcassets */,
-				1D59CA4F2191B02300F5F42A /* LaunchScreen.storyboard */,
-				1D59CA522191B02300F5F42A /* Info.plist */,
+				1D9E7DCC21943AB7000DB4BE /* AppDelegate.swift */,
+				1D9E7DCE21943AB7000DB4BE /* ViewController.swift */,
+				1D9E7DD021943AB7000DB4BE /* Main.storyboard */,
+				1D9E7DD321943AB7000DB4BE /* Assets.xcassets */,
+				1D9E7DD521943AB7000DB4BE /* LaunchScreen.storyboard */,
+				1D9E7DD821943AB7000DB4BE /* Info.plist */,
 			);
 			path = NanachanButton;
 			sourceTree = "<group>";
 		};
-		1D59CA5A2191B02400F5F42A /* NanachanButtonTests */ = {
+		1D9E7DE021943AB7000DB4BE /* NanachanButtonTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D59CA5B2191B02400F5F42A /* NanachanButtonTests.swift */,
-				1D59CA5D2191B02400F5F42A /* Info.plist */,
+				1D9E7DE121943AB7000DB4BE /* NanachanButtonTests.swift */,
+				1D9E7DE321943AB7000DB4BE /* Info.plist */,
 			);
 			path = NanachanButtonTests;
 			sourceTree = "<group>";
 		};
-		1D59CA652191B02400F5F42A /* NanachanButtonUITests */ = {
+		1D9E7DEB21943AB7000DB4BE /* NanachanButtonUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1D59CA662191B02400F5F42A /* NanachanButtonUITests.swift */,
-				1D59CA682191B02400F5F42A /* Info.plist */,
+				1D9E7DEC21943AB7000DB4BE /* NanachanButtonUITests.swift */,
+				1D9E7DEE21943AB8000DB4BE /* Info.plist */,
 			);
 			path = NanachanButtonUITests;
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D59CA422191B02200F5F42A /* NanachanButton */ = {
+		1D9E7DC821943AB7000DB4BE /* NanachanButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D59CA6B2191B02400F5F42A /* Build configuration list for PBXNativeTarget "NanachanButton" */;
+			buildConfigurationList = 1D9E7DF121943AB8000DB4BE /* Build configuration list for PBXNativeTarget "NanachanButton" */;
 			buildPhases = (
-				1D59CA3F2191B02200F5F42A /* Sources */,
-				1D59CA402191B02200F5F42A /* Frameworks */,
-				1D59CA412191B02200F5F42A /* Resources */,
+				1D9E7DC521943AB7000DB4BE /* Sources */,
+				1D9E7DC621943AB7000DB4BE /* Frameworks */,
+				1D9E7DC721943AB7000DB4BE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +142,69 @@
 			);
 			name = NanachanButton;
 			productName = NanachanButton;
-			productReference = 1D59CA432191B02200F5F42A /* NanachanButton.app */;
+			productReference = 1D9E7DC921943AB7000DB4BE /* NanachanButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1D59CA562191B02400F5F42A /* NanachanButtonTests */ = {
+		1D9E7DDC21943AB7000DB4BE /* NanachanButtonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D59CA6E2191B02400F5F42A /* Build configuration list for PBXNativeTarget "NanachanButtonTests" */;
+			buildConfigurationList = 1D9E7DF421943AB8000DB4BE /* Build configuration list for PBXNativeTarget "NanachanButtonTests" */;
 			buildPhases = (
-				1D59CA532191B02400F5F42A /* Sources */,
-				1D59CA542191B02400F5F42A /* Frameworks */,
-				1D59CA552191B02400F5F42A /* Resources */,
+				1D9E7DD921943AB7000DB4BE /* Sources */,
+				1D9E7DDA21943AB7000DB4BE /* Frameworks */,
+				1D9E7DDB21943AB7000DB4BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D59CA592191B02400F5F42A /* PBXTargetDependency */,
+				1D9E7DDF21943AB7000DB4BE /* PBXTargetDependency */,
 			);
 			name = NanachanButtonTests;
 			productName = NanachanButtonTests;
-			productReference = 1D59CA572191B02400F5F42A /* NanachanButtonTests.xctest */;
+			productReference = 1D9E7DDD21943AB7000DB4BE /* NanachanButtonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1D59CA612191B02400F5F42A /* NanachanButtonUITests */ = {
+		1D9E7DE721943AB7000DB4BE /* NanachanButtonUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D59CA712191B02400F5F42A /* Build configuration list for PBXNativeTarget "NanachanButtonUITests" */;
+			buildConfigurationList = 1D9E7DF721943AB8000DB4BE /* Build configuration list for PBXNativeTarget "NanachanButtonUITests" */;
 			buildPhases = (
-				1D59CA5E2191B02400F5F42A /* Sources */,
-				1D59CA5F2191B02400F5F42A /* Frameworks */,
-				1D59CA602191B02400F5F42A /* Resources */,
+				1D9E7DE421943AB7000DB4BE /* Sources */,
+				1D9E7DE521943AB7000DB4BE /* Frameworks */,
+				1D9E7DE621943AB7000DB4BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D59CA642191B02400F5F42A /* PBXTargetDependency */,
+				1D9E7DEA21943AB7000DB4BE /* PBXTargetDependency */,
 			);
 			name = NanachanButtonUITests;
 			productName = NanachanButtonUITests;
-			productReference = 1D59CA622191B02400F5F42A /* NanachanButtonUITests.xctest */;
+			productReference = 1D9E7DE821943AB7000DB4BE /* NanachanButtonUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1D59CA3B2191B02200F5F42A /* Project object */ = {
+		1D9E7DC121943AB7000DB4BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Naochael;
 				TargetAttributes = {
-					1D59CA422191B02200F5F42A = {
+					1D9E7DC821943AB7000DB4BE = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					1D59CA562191B02400F5F42A = {
+					1D9E7DDC21943AB7000DB4BE = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 1D59CA422191B02200F5F42A;
+						TestTargetID = 1D9E7DC821943AB7000DB4BE;
 					};
-					1D59CA612191B02400F5F42A = {
+					1D9E7DE721943AB7000DB4BE = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 1D59CA422191B02200F5F42A;
+						TestTargetID = 1D9E7DC821943AB7000DB4BE;
 					};
 				};
 			};
-			buildConfigurationList = 1D59CA3E2191B02200F5F42A /* Build configuration list for PBXProject "NanachanButton" */;
+			buildConfigurationList = 1D9E7DC421943AB7000DB4BE /* Build configuration list for PBXProject "NanachanButton" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +212,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 1D59CA3A2191B02200F5F42A;
-			productRefGroup = 1D59CA442191B02200F5F42A /* Products */;
+			mainGroup = 1D9E7DC021943AB7000DB4BE;
+			productRefGroup = 1D9E7DCA21943AB7000DB4BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D59CA422191B02200F5F42A /* NanachanButton */,
-				1D59CA562191B02400F5F42A /* NanachanButtonTests */,
-				1D59CA612191B02400F5F42A /* NanachanButtonUITests */,
+				1D9E7DC821943AB7000DB4BE /* NanachanButton */,
+				1D9E7DDC21943AB7000DB4BE /* NanachanButtonTests */,
+				1D9E7DE721943AB7000DB4BE /* NanachanButtonUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D59CA412191B02200F5F42A /* Resources */ = {
+		1D9E7DC721943AB7000DB4BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D59CA512191B02300F5F42A /* LaunchScreen.storyboard in Resources */,
-				1D59CA4E2191B02300F5F42A /* Assets.xcassets in Resources */,
-				1D59CA4C2191B02200F5F42A /* Main.storyboard in Resources */,
+				1D9E7DD721943AB7000DB4BE /* LaunchScreen.storyboard in Resources */,
+				1D9E7DD421943AB7000DB4BE /* Assets.xcassets in Resources */,
+				1D9E7DD221943AB7000DB4BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D59CA552191B02400F5F42A /* Resources */ = {
+		1D9E7DDB21943AB7000DB4BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D59CA602191B02400F5F42A /* Resources */ = {
+		1D9E7DE621943AB7000DB4BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +252,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D59CA3F2191B02200F5F42A /* Sources */ = {
+		1D9E7DC521943AB7000DB4BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D59CA492191B02200F5F42A /* ViewController.swift in Sources */,
-				1D59CA472191B02200F5F42A /* AppDelegate.swift in Sources */,
+				1D9E7DCF21943AB7000DB4BE /* ViewController.swift in Sources */,
+				1D9E7DCD21943AB7000DB4BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D59CA532191B02400F5F42A /* Sources */ = {
+		1D9E7DD921943AB7000DB4BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D59CA5C2191B02400F5F42A /* NanachanButtonTests.swift in Sources */,
+				1D9E7DE221943AB7000DB4BE /* NanachanButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D59CA5E2191B02400F5F42A /* Sources */ = {
+		1D9E7DE421943AB7000DB4BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D59CA672191B02400F5F42A /* NanachanButtonUITests.swift in Sources */,
+				1D9E7DED21943AB7000DB4BE /* NanachanButtonUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D59CA592191B02400F5F42A /* PBXTargetDependency */ = {
+		1D9E7DDF21943AB7000DB4BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D59CA422191B02200F5F42A /* NanachanButton */;
-			targetProxy = 1D59CA582191B02400F5F42A /* PBXContainerItemProxy */;
+			target = 1D9E7DC821943AB7000DB4BE /* NanachanButton */;
+			targetProxy = 1D9E7DDE21943AB7000DB4BE /* PBXContainerItemProxy */;
 		};
-		1D59CA642191B02400F5F42A /* PBXTargetDependency */ = {
+		1D9E7DEA21943AB7000DB4BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D59CA422191B02200F5F42A /* NanachanButton */;
-			targetProxy = 1D59CA632191B02400F5F42A /* PBXContainerItemProxy */;
+			target = 1D9E7DC821943AB7000DB4BE /* NanachanButton */;
+			targetProxy = 1D9E7DE921943AB7000DB4BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D59CA4A2191B02200F5F42A /* Main.storyboard */ = {
+		1D9E7DD021943AB7000DB4BE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D59CA4B2191B02200F5F42A /* Base */,
+				1D9E7DD121943AB7000DB4BE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1D59CA4F2191B02300F5F42A /* LaunchScreen.storyboard */ = {
+		1D9E7DD521943AB7000DB4BE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D59CA502191B02300F5F42A /* Base */,
+				1D9E7DD621943AB7000DB4BE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1D59CA692191B02400F5F42A /* Debug */ = {
+		1D9E7DEF21943AB8000DB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		1D59CA6A2191B02400F5F42A /* Release */ = {
+		1D9E7DF021943AB8000DB4BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,11 +428,12 @@
 			};
 			name = Release;
 		};
-		1D59CA6C2191B02400F5F42A /* Debug */ = {
+		1D9E7DF221943AB8000DB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3H5F4Y555;
 				INFOPLIST_FILE = NanachanButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,11 +446,12 @@
 			};
 			name = Debug;
 		};
-		1D59CA6D2191B02400F5F42A /* Release */ = {
+		1D9E7DF321943AB8000DB4BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3H5F4Y555;
 				INFOPLIST_FILE = NanachanButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,12 +464,13 @@
 			};
 			name = Release;
 		};
-		1D59CA6F2191B02400F5F42A /* Debug */ = {
+		1D9E7DF521943AB8000DB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3H5F4Y555;
 				INFOPLIST_FILE = NanachanButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,12 +485,13 @@
 			};
 			name = Debug;
 		};
-		1D59CA702191B02400F5F42A /* Release */ = {
+		1D9E7DF621943AB8000DB4BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3H5F4Y555;
 				INFOPLIST_FILE = NanachanButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,11 +506,12 @@
 			};
 			name = Release;
 		};
-		1D59CA722191B02400F5F42A /* Debug */ = {
+		1D9E7DF821943AB8000DB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3H5F4Y555;
 				INFOPLIST_FILE = NanachanButtonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,11 +526,12 @@
 			};
 			name = Debug;
 		};
-		1D59CA732191B02400F5F42A /* Release */ = {
+		1D9E7DF921943AB8000DB4BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3H5F4Y555;
 				INFOPLIST_FILE = NanachanButtonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,43 +549,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D59CA3E2191B02200F5F42A /* Build configuration list for PBXProject "NanachanButton" */ = {
+		1D9E7DC421943AB7000DB4BE /* Build configuration list for PBXProject "NanachanButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D59CA692191B02400F5F42A /* Debug */,
-				1D59CA6A2191B02400F5F42A /* Release */,
+				1D9E7DEF21943AB8000DB4BE /* Debug */,
+				1D9E7DF021943AB8000DB4BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D59CA6B2191B02400F5F42A /* Build configuration list for PBXNativeTarget "NanachanButton" */ = {
+		1D9E7DF121943AB8000DB4BE /* Build configuration list for PBXNativeTarget "NanachanButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D59CA6C2191B02400F5F42A /* Debug */,
-				1D59CA6D2191B02400F5F42A /* Release */,
+				1D9E7DF221943AB8000DB4BE /* Debug */,
+				1D9E7DF321943AB8000DB4BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D59CA6E2191B02400F5F42A /* Build configuration list for PBXNativeTarget "NanachanButtonTests" */ = {
+		1D9E7DF421943AB8000DB4BE /* Build configuration list for PBXNativeTarget "NanachanButtonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D59CA6F2191B02400F5F42A /* Debug */,
-				1D59CA702191B02400F5F42A /* Release */,
+				1D9E7DF521943AB8000DB4BE /* Debug */,
+				1D9E7DF621943AB8000DB4BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D59CA712191B02400F5F42A /* Build configuration list for PBXNativeTarget "NanachanButtonUITests" */ = {
+		1D9E7DF721943AB8000DB4BE /* Build configuration list for PBXNativeTarget "NanachanButtonUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D59CA722191B02400F5F42A /* Debug */,
-				1D59CA732191B02400F5F42A /* Release */,
+				1D9E7DF821943AB8000DB4BE /* Debug */,
+				1D9E7DF921943AB8000DB4BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1D59CA3B2191B02200F5F42A /* Project object */;
+	rootObject = 1D9E7DC121943AB7000DB4BE /* Project object */;
 }
