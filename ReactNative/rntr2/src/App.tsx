@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import reducers from "./reducers";
 import { StyleSheet, View } from "react-native";
 
-import Header from "./components/Header";
+import Header from "./containers/Header";
+
+const middleware = [thunk];
+const store = createStore(reducers, applyMiddleware(...middleware));
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -11,7 +16,7 @@ export default class App extends Component<Props> {
     return (
       <Provider store={store}>
         <View>
-          <Header hoge="fuga" />
+          <Header />
         </View>
       </Provider>
     );

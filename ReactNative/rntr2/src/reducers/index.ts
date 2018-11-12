@@ -3,5 +3,5 @@ import { combineReducers } from "redux";
 
 export default combineReducers({
   // user,
-  hoge: (state = {}, action) => state
+  hoge: (state = { fuga: 111 }) => state
 });

@@ -1,9 +1,9 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
-type Props = {
-  hoge: string;
-};
+export interface Props {
+  hoge: object;
+}
 export default (props: Props) => (
   <View
     style={{
@@ -13,7 +13,7 @@ export default (props: Props) => (
       backgroundColor: "#ddd"
     }}
   >
-    <Text>hogehogefefefe{props.hoge}</Text>
+    <Text>hogehogefefefe{console.log(111, props.hoge)}</Text>
   </View>
 );
 
