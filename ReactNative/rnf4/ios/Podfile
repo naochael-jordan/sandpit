@@ -8,6 +8,8 @@ target 'rnf4' do
   # Pods for rnf4
   pod 'Firebase/Core'
 
+  pod 'Firebase/Firestore'
+
   target 'rnf4-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
