@@ -1,5 +1,13 @@
 import React, { Component } from "react";
-import { StyleSheet, TouchableOpacity, Image, View } from "react-native";
+import {
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+  FlatList,
+  View,
+  Animated,
+  Easing
+} from "react-native";
 import Sound from "react-native-sound";
 
 type Props = {};
@@ -8,7 +16,21 @@ export default class App extends Component<Props> {
     super(props);
 
     this.state = {
-      whoosh: null
+      whoosh: null,
+      animals: [
+        {
+          id: 1,
+          name: "elephant",
+          current: 0,
+          sizeRatio: new Animated.Value(0)
+        },
+        {
+          id: 2,
+          name: "elephant",
+          current: 0,
+          sizeRatio: new Animated.Value(0)
+        }
+      ]
     };
   }
 
@@ -31,7 +53,7 @@ export default class App extends Component<Props> {
     console.log(this);
   }
 
-  _onPressButton = () => {
+  _onPressButton = item => {
     // Play the sound with an onEnd callback
     this.state.whoosh.play(success => {
       if (success) {
@@ -43,17 +65,89 @@ export default class App extends Component<Props> {
         this.state.whoosh.reset();
       }
     });
+
+    // 拡大アニメーション
+    item.current = item.current ? 0 : 1;
+    Animated.timing(item.sizeRatio, {
+      toValue: item.current,
+      duration: 1000,
+      easing: Easing.elastic(),
+      useNativeDriver: true,
+      friction: 4, // 摩擦 (大きい方が振動が減衰しやすい)
+      tension: 36 // ばね定数
+    }).start();
   };
 
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity
-          style={styles.buttonWrapper}
-          onPress={this._onPressButton}
+        <ScrollView
+          style={{
+            flex: 1,
+            paddingTop: 50
+            // backgroundColor: "#f00"
+          }}
         >
-          <Image style={styles.button} source={require("./elephant.png")} />
-        </TouchableOpacity>
+          <FlatList
+            data={this.state.animals}
+            renderItem={({ item }) => (
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}
+              >
+                <Animated.View
+                  style={[
+                    {
+                      backgroundColor: "#fff",
+                      borderRadius: 200,
+                      overflow: "hidden"
+                    },
+                    {
+                      transform: [
+                        {
+                          scale: item.sizeRatio.interpolate({
+                            inputRange: [0, 0.5, 1],
+                            outputRange: [1, 1.2, 1]
+                          })
+                        }
+                      ]
+                    }
+                  ]}
+                >
+                  <TouchableOpacity
+                    style={{
+                      padding: 20
+                    }}
+                    onPress={() => this._onPressButton(item)}
+                  >
+                    <Animated.Image
+                      style={[
+                        {
+                          width: 200,
+                          height: 200
+                        },
+                        {
+                          transform: [
+                            {
+                              scale: item.sizeRatio.interpolate({
+                                inputRange: [0, 0.5, 1],
+                                outputRange: [1, 1.2, 1]
+                              })
+                            }
+                          ]
+                        }
+                      ]}
+                      source={require("./elephant.png")}
+                    />
+                  </TouchableOpacity>
+                </Animated.View>
+              </View>
+            )}
+          />
+        </ScrollView>
       </View>
     );
   }
@@ -62,33 +156,6 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  buttonWrapper: {
-    padding: 30,
-    backgroundColor: "#fff",
-    borderColor: "#666",
-    borderWidth: 6,
-    borderRadius: 200,
-    shadowColor: "#555",
-    shadowOffset: {
-      width: 0,
-      height: 4
-    },
-    shadowRadius: 0,
-    shadowOpacity: 1
-  },
-  button: {
-    width: 200,
-    height: 200,
-    shadowColor: "#333",
-    shadowOffset: {
-      width: 1,
-      height: 1
-    },
-    shadowRadius: 0,
-    shadowOpacity: 1
+    backgroundColor: "#272829"
   }
 });
