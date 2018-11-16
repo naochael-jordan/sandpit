@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+  YellowBox,
   StyleSheet,
   TouchableOpacity,
   ScrollView,
@@ -10,59 +11,52 @@ import {
 } from "react-native";
 import Sound from "react-native-sound";
 
-type Props = {};
-export default class App extends Component<Props> {
+YellowBox.ignoreWarnings(["Remote debugger"]);
+
+export default class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      whoosh: null,
       animals: [
         {
           id: 1,
           name: "elephant",
+          image: require("./elephant.png"),
           current: 0,
-          sizeRatio: new Animated.Value(0)
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("elephant1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
         },
         {
           id: 2,
-          name: "elephant",
+          name: "lion",
+          image: require("./lion.png"),
           current: 0,
-          sizeRatio: new Animated.Value(0)
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("lion1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
         }
       ]
     };
   }
 
-  componentWillMount() {
-    this.setState({
-      whoosh: new Sound("elephant1.mp3", Sound.MAIN_BUNDLE, error => {
-        if (error) {
-          console.log("failed to load the sound", error);
-          return;
-        }
-        // loaded successfully
-        console.log(
-          "duration in seconds: " +
-            this.state.whoosh.getDuration() +
-            "number of channels: " +
-            this.state.whoosh.getNumberOfChannels()
-        );
-      })
-    });
-    console.log(this);
-  }
-
   _onPressButton = item => {
     // Play the sound with an onEnd callback
-    this.state.whoosh.play(success => {
+    item.voice.play(success => {
       if (success) {
         console.log("successfully finished playing");
       } else {
         console.log("playback failed due to audio decoding errors");
         // reset the player to its uninitialized state (android only)
         // this is the only option to recover after an error occured and use the player again
-        this.state.whoosh.reset();
+        item.voice.reset();
       }
     });
 
@@ -71,10 +65,7 @@ export default class App extends Component<Props> {
     Animated.timing(item.sizeRatio, {
       toValue: item.current,
       duration: 1000,
-      easing: Easing.elastic(),
-      useNativeDriver: true,
-      friction: 4, // 摩擦 (大きい方が振動が減衰しやすい)
-      tension: 36 // ばね定数
+      easing: Easing.elastic()
     }).start();
   };
 
@@ -90,12 +81,16 @@ export default class App extends Component<Props> {
         >
           <FlatList
             data={this.state.animals}
-            renderItem={({ item }) => (
+            keyExtractor={item => item.id.toString()}
+            renderItem={({ item, index }) => (
               <View
                 style={{
                   flex: 1,
                   alignItems: "center",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  paddingTop: index ? 0 : 50,
+                  paddingBottom: 50
+                  // backgroundColor: "#f00"
                 }}
               >
                 <Animated.View
@@ -140,7 +135,7 @@ export default class App extends Component<Props> {
                           ]
                         }
                       ]}
-                      source={require("./elephant.png")}
+                      source={item.image}
                     />
                   </TouchableOpacity>
                 </Animated.View>
