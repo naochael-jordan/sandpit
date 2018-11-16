@@ -42,6 +42,102 @@ export default class App extends Component {
               console.log("failed to load the sound", error);
             }
           })
+        },
+        {
+          id: 3,
+          name: "dog",
+          image: require("./dog.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("dog1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 4,
+          name: "cat",
+          image: require("./cat.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("cat1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 5,
+          name: "niwatori",
+          image: require("./niwatori.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("niwatori1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 6,
+          name: "yagi",
+          image: require("./yagi.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("yagi1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 7,
+          name: "hitsuji",
+          image: require("./hitsuji.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("hitsuji1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 8,
+          name: "hiyoko",
+          image: require("./hiyoko.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("hiyoko1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 9,
+          name: "hato",
+          image: require("./hato.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("hato1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 10,
+          name: "inoshishi",
+          image: require("./inoshishi.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("inoshishi1.mp3", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
         }
       ]
     };
@@ -75,7 +171,8 @@ export default class App extends Component {
         <ScrollView
           style={{
             flex: 1,
-            paddingTop: 50
+            paddingTop: 30,
+            paddingBottom: 50
             // backgroundColor: "#f00"
           }}
         >
@@ -114,7 +211,7 @@ export default class App extends Component {
                 >
                   <TouchableOpacity
                     style={{
-                      padding: 20
+                      padding: 32
                     }}
                     onPress={() => this._onPressButton(item)}
                   >
