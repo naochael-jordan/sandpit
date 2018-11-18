@@ -138,6 +138,30 @@ export default class App extends Component {
               console.log("failed to load the sound", error);
             }
           })
+        },
+        {
+          id: 11,
+          name: "papa",
+          image: require("./papa.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("papa.m4a", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
+        },
+        {
+          id: 12,
+          name: "mama",
+          image: require("./mama.png"),
+          current: 0,
+          sizeRatio: new Animated.Value(0),
+          voice: new Sound("mama.m4a", Sound.MAIN_BUNDLE, error => {
+            if (error) {
+              console.log("failed to load the sound", error);
+            }
+          })
         }
       ]
     };

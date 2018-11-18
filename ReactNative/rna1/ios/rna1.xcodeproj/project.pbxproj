@@ -33,6 +33,8 @@
 		1DB465D0219EBF380045565E /* hiyoko1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1DB465CF219EBF380045565E /* hiyoko1.mp3 */; };
 		1DB465D2219EBF780045565E /* hato1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1DB465D1219EBF780045565E /* hato1.mp3 */; };
 		1DB465D6219EC0E40045565E /* inoshishi1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1DB465D5219EC0E40045565E /* inoshishi1.mp3 */; };
+		1DFF50C921A0DFAD00610554 /* papa.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1DFF50C821A0DFAC00610554 /* papa.m4a */; };
+		1DFF50CB21A0DFB400610554 /* mama.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1DFF50CA21A0DFB400610554 /* mama.m4a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -364,6 +366,8 @@
 		1DB465CF219EBF380045565E /* hiyoko1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hiyoko1.mp3; path = ../../../../../../../Downloads/hiyoko1.mp3; sourceTree = "<group>"; };
 		1DB465D1219EBF780045565E /* hato1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hato1.mp3; path = ../../../../../../../Downloads/hato1.mp3; sourceTree = "<group>"; };
 		1DB465D5219EC0E40045565E /* inoshishi1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = inoshishi1.mp3; path = ../../../../../../../Downloads/inoshishi1.mp3; sourceTree = "<group>"; };
+		1DFF50C821A0DFAC00610554 /* papa.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = papa.m4a; path = ../papa.m4a; sourceTree = "<group>"; };
+		1DFF50CA21A0DFB400610554 /* mama.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = mama.m4a; path = ../mama.m4a; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* rna1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rna1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* rna1-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rna1-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -521,7 +525,9 @@
 				1DB465C3219EB6380045565E /* lion1.mp3 */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				1DB465CD219EBE9F0045565E /* hitsuji1.mp3 */,
+				1DFF50CA21A0DFB400610554 /* mama.m4a */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				1DFF50C821A0DFAC00610554 /* papa.m4a */,
 				1DB465CF219EBF380045565E /* hiyoko1.mp3 */,
 				1DB465CB219EBE650045565E /* yagi1.mp3 */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1129,7 +1135,9 @@
 				1DB465CC219EBE650045565E /* yagi1.mp3 in Resources */,
 				1DB465CA219EBDD10045565E /* niwatori1.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				1DFF50CB21A0DFB400610554 /* mama.m4a in Resources */,
 				1DB465CE219EBE9F0045565E /* hitsuji1.mp3 in Resources */,
+				1DFF50C921A0DFAD00610554 /* papa.m4a in Resources */,
 				1DB465C4219EB6380045565E /* lion1.mp3 in Resources */,
 				1DB4658B219D77FD0045565E /* elephant1.mp3 in Resources */,
 				1DB465C8219EBD5E0045565E /* cat1.mp3 in Resources */,
